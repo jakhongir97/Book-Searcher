@@ -8,7 +8,12 @@
 import UIKit
 
 class SearchTableViewCell: UITableViewCell {
+    
+    // MARK: - Outlets
+    @IBOutlet weak var titleLabel: UILabel!
+    
 
+    // MARK: - Life cycle
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

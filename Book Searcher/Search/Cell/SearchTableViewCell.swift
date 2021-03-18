@@ -11,6 +11,8 @@ class SearchTableViewCell: UITableViewCell {
     
     // MARK: - Outlets
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorsLabel: UILabel!
+    @IBOutlet weak var bookImageVIew: UIImageView!
     
 
     // MARK: - Life cycle

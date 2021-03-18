@@ -16,6 +16,7 @@ class SearchViewController: UIViewController, ViewSpecificController, AlertViewC
     private let viewModel = SearchViewModel()
     internal var customSpinnerView = CustomSpinnerView()
     internal var isLoading: Bool = false
+    internal var coordinator: SearchCoordinator?
     
     // MARK: - Data Providers
     private var searchDataProvider: SearchDataProvider?

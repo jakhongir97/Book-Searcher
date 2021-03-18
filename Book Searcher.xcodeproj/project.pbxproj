@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,6 +45,10 @@
 		3265E00326037AD80061D1BA /* CustomDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265E00226037AD80061D1BA /* CustomDecoder.swift */; };
 		3265E00726037AF40061D1BA /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265E00626037AF40061D1BA /* Book.swift */; };
 		3265E00C2603864A0061D1BA /* SearchDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265E00B2603864A0061D1BA /* SearchDataProvider.swift */; };
+		32A5BC7A26039A83005DB988 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BC7926039A83005DB988 /* DetailViewController.swift */; };
+		32A5BC7F26039A94005DB988 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BC7E26039A94005DB988 /* DetailView.swift */; };
+		32A5BC8326039A9F005DB988 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A5BC8226039A9F005DB988 /* DetailView.xib */; };
+		32A5BC8726039D26005DB988 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 32A5BC8626039D26005DB988 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +92,9 @@
 		3265E00226037AD80061D1BA /* CustomDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDecoder.swift; sourceTree = "<group>"; };
 		3265E00626037AF40061D1BA /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		3265E00B2603864A0061D1BA /* SearchDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataProvider.swift; sourceTree = "<group>"; };
+		32A5BC7926039A83005DB988 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		32A5BC7E26039A94005DB988 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		32A5BC8226039A9F005DB988 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A5BC8726039D26005DB988 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,12 +132,8 @@
 				3265DF9626034D710061D1BA /* Additional Materials */,
 				3265DF9226034D5F0061D1BA /* SearchCoordinator.swift */,
 				3265DF9026034D3B0061D1BA /* Search */,
-				3265DF9126034D4B0061D1BA /* Detail */,
-				3265DF6D26034B130061D1BA /* AppDelegate.swift */,
-				3265DF6F26034B130061D1BA /* SceneDelegate.swift */,
-				3265DF7626034B140061D1BA /* Assets.xcassets */,
-				3265DF7826034B140061D1BA /* LaunchScreen.storyboard */,
-				3265DF7B26034B140061D1BA /* Info.plist */,
+				32A5BC7826039A65005DB988 /* Detail */,
+				32A5BC892603A698005DB988 /* Resources */,
 			);
 			path = "Book Searcher";
 			sourceTree = "<group>";
@@ -144,13 +148,6 @@
 				3265DFE2260354DF0061D1BA /* View Model */,
 			);
 			path = Search;
-			sourceTree = "<group>";
-		};
-		3265DF9126034D4B0061D1BA /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		3265DF9626034D710061D1BA /* Additional Materials */ = {
@@ -267,6 +264,36 @@
 			path = "Data Provider";
 			sourceTree = "<group>";
 		};
+		32A5BC7826039A65005DB988 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				32A5BC7926039A83005DB988 /* DetailViewController.swift */,
+				32A5BC7D26039A87005DB988 /* DetailView */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		32A5BC7D26039A87005DB988 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				32A5BC7E26039A94005DB988 /* DetailView.swift */,
+				32A5BC8226039A9F005DB988 /* DetailView.xib */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		32A5BC892603A698005DB988 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3265DF6D26034B130061D1BA /* AppDelegate.swift */,
+				3265DF6F26034B130061D1BA /* SceneDelegate.swift */,
+				3265DF7626034B140061D1BA /* Assets.xcassets */,
+				3265DF7826034B140061D1BA /* LaunchScreen.storyboard */,
+				3265DF7B26034B140061D1BA /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,6 +310,9 @@
 			dependencies = (
 			);
 			name = "Book Searcher";
+			packageProductDependencies = (
+				32A5BC8626039D26005DB988 /* SDWebImage */,
+			);
 			productName = "Book Searcher";
 			productReference = 3265DF6A26034B130061D1BA /* Book Searcher.app */;
 			productType = "com.apple.product-type.application";
@@ -310,6 +340,9 @@
 				Base,
 			);
 			mainGroup = 3265DF6126034B130061D1BA;
+			packageReferences = (
+				32A5BC8526039D26005DB988 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 3265DF6B26034B130061D1BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +361,7 @@
 				3265DFE7260357D60061D1BA /* SearchTableViewCell.xib in Resources */,
 				3265DF7726034B140061D1BA /* Assets.xcassets in Resources */,
 				3265DFAE26034F7C0061D1BA /* SearchView.xib in Resources */,
+				32A5BC8326039A9F005DB988 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3265DF9326034D5F0061D1BA /* SearchCoordinator.swift in Sources */,
+				32A5BC7F26039A94005DB988 /* DetailView.swift in Sources */,
 				3265DFF9260378CC0061D1BA /* Headers.swift in Sources */,
 				3265DFBB260350210061D1BA /* UIColor.swift in Sources */,
 				3265DFCE260352220061D1BA /* AssetsImage.swift in Sources */,
@@ -365,6 +400,7 @@
 				3265DFDB260353DA0061D1BA /* UISearchBar.swift in Sources */,
 				3265DFF3260377D60061D1BA /* HTTPRequestMethods.swift in Sources */,
 				3265E00C2603864A0061D1BA /* SearchDataProvider.swift in Sources */,
+				32A5BC7A26039A83005DB988 /* DetailViewController.swift in Sources */,
 				3265DFAB26034F700061D1BA /* SearchViewModel.swift in Sources */,
 				3265DFA126034EC50061D1BA /* ResponseErrors.swift in Sources */,
 				3265DFE6260357D60061D1BA /* SearchTableViewCell.swift in Sources */,
@@ -512,7 +548,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A9V4SQ8LR;
-				INFOPLIST_FILE = "Book Searcher/Info.plist";
+				INFOPLIST_FILE = "Book Searcher/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -531,7 +567,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A9V4SQ8LR;
-				INFOPLIST_FILE = "Book Searcher/Info.plist";
+				INFOPLIST_FILE = "Book Searcher/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -565,6 +601,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		32A5BC8526039D26005DB988 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32A5BC8626039D26005DB988 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32A5BC8526039D26005DB988 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3265DF6226034B130061D1BA /* Project object */;
 }

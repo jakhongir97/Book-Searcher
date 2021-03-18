@@ -17,6 +17,13 @@ final class SearchCoordinator: Coordinator {
     
     internal func start() {
         let vc = SearchViewController()
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    internal func pushToDetailVC(book: Book) {
+        let vc = DetailViewController()
+        vc.book = book
         navigationController.pushViewController(vc, animated: true)
     }
     

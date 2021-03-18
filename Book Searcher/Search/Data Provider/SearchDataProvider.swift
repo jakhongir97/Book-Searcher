@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 final class SearchDataProvider: NSObject, UITableViewDataSource, UITableViewDelegate {
     
@@ -39,16 +40,21 @@ final class SearchDataProvider: NSObject, UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableViewCell.defaultReuseIdentifier, for: indexPath) as? SearchTableViewCell else { return UITableViewCell() }
         cell.titleLabel.text = items[indexPath.row].volumeInfo?.title
+        cell.authorsLabel.text  = items[indexPath.row].volumeInfo?.authors?.first
+        if let imageURL = items[indexPath.row].volumeInfo?.imageLinks?.thumbnail {
+            cell.bookImageVIew.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage())
+        }
         return cell
     }
     
     // MARK: - Delegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 100
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        guard let vc = viewController as? SearchViewController else { return }
+        vc.coordinator?.pushToDetailVC(book: items[indexPath.row])
     }
     
 }

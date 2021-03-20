@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="RJf-CX-DY1">
-                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <rect key="frame" x="10" y="44" width="394" height="56"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q1W-iz-eGd">
@@ -29,11 +29,11 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="RJf-CX-DY1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6Wy-ak-ncR"/>
+                <constraint firstItem="RJf-CX-DY1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="6Wy-ak-ncR"/>
                 <constraint firstItem="RJf-CX-DY1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Kgz-wi-nbi"/>
                 <constraint firstItem="Q1W-iz-eGd" firstAttribute="top" secondItem="RJf-CX-DY1" secondAttribute="bottom" id="Q2s-1L-RkA"/>
                 <constraint firstItem="Q1W-iz-eGd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Wt4-2x-VTg"/>
-                <constraint firstItem="RJf-CX-DY1" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="b0V-Vp-4In"/>
+                <constraint firstItem="RJf-CX-DY1" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-10" id="b0V-Vp-4In"/>
                 <constraint firstAttribute="bottom" secondItem="Q1W-iz-eGd" secondAttribute="bottom" id="gDP-YM-O1y"/>
                 <constraint firstItem="Q1W-iz-eGd" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="m4I-HO-uUy"/>
             </constraints>

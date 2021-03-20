@@ -10,13 +10,15 @@ import UIKit
 extension UINavigationBar {
     func opacityNavBar() {
         shadowImage = UIImage()
-        titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.appColor(.myBlack)]
-        barTintColor = UIColor.appColor(.mySecondBackground)
+        titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.appColor(.myWhite)]
+        largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.appColor(.myWhite)]
+        barTintColor = UIColor.appColor(.myMainBackground)
         backgroundColor = .clear
         isTranslucent = false
+        prefersLargeTitles = true
         setBackgroundImage(UIImage(), for: .default)
         backIndicatorImage = UIImage.appImage(.back)
         backIndicatorTransitionMaskImage = UIImage.appImage(.back)
-        tintColor = UIColor.appColor(.myBlack)
+        tintColor = UIColor.appColor(.myWhite)
     }
 }

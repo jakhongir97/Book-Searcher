@@ -23,11 +23,14 @@ class SearchViewController: UIViewController, ViewSpecificController, AlertViewC
 
     // MARK: - Attributes
     override var prefersStatusBarHidden: Bool { return true }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
     
     // MARK: - Actions
     
     @objc func search(_ searchBar: UISearchBar) {
-        guard let query = searchBar.text, query.trimmingCharacters(in: .whitespaces) != "", query.count >= 3, !isLoading else { return }
+        guard let query = searchBar.text, query.trimmingCharacters(in: .whitespaces) != "", !isLoading else { return }
         isLoading = true
         viewModel.getBooks(query: query)
     }
@@ -42,7 +45,7 @@ class SearchViewController: UIViewController, ViewSpecificController, AlertViewC
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        setNeedsStatusBarAppearanceUpdate()
     }
     
 }
@@ -50,15 +53,9 @@ class SearchViewController: UIViewController, ViewSpecificController, AlertViewC
 // MARK: - UISearchBarDelegate
 extension SearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("working")
         NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(search), object: searchBar)
         perform(#selector(search), with: searchBar, afterDelay: 0.3)
     }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        
-    }
-    
     
 }
 
@@ -76,6 +73,7 @@ extension SearchViewController {
     private func appearanceSettings() {
         navigationItem.title = "Search"
         navigationController?.navigationBar.opacityNavBar()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         viewModel.delegate = self
         view().searchBar.delegate = self
     }

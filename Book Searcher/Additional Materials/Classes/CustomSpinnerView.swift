@@ -2,7 +2,7 @@
 //  CustomSpinnerView.swift
 //  Book Searcher
 //
-//  Created by Jakhongir Nematov on 18/03/21.
+//  Created by Jakhongir Nematov on 21/03/21.
 //
 
 import UIKit
@@ -141,3 +141,4 @@ final class CustomSpinnerView: UIView {
         }
     }
 }
+

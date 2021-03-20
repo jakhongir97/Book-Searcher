@@ -40,8 +40,8 @@ final class SearchDataProvider: NSObject, UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableViewCell.defaultReuseIdentifier, for: indexPath) as? SearchTableViewCell else { return UITableViewCell() }
         cell.titleLabel.text = items[indexPath.row].volumeInfo?.title
-        cell.authorsLabel.text  = items[indexPath.row].volumeInfo?.authors?.first
-        if let imageURL = items[indexPath.row].volumeInfo?.imageLinks?.thumbnail {
+        cell.authorsLabel.text  = items[indexPath.row].volumeInfo?.authors?.joined(separator: ", ")
+        if let imageURL = items[indexPath.row].volumeInfo?.imageLinks?.smallThumbnail {
             cell.bookImageVIew.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage())
         }
         return cell

@@ -43,6 +43,10 @@ extension DetailViewController {
     
     private func setupDetail(book: Book) {
         view().titleLabel.text = book.volumeInfo?.title
+        view().authorsLabel.text = book.volumeInfo?.authors?.joined(separator: ", ")
+        if let imageURL = book.volumeInfo?.imageLinks?.thumbnail {
+            view().imageView.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage())
+        }
     }
 }
 

@@ -24,7 +24,6 @@
 		3265DFBB260350210061D1BA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFBA260350210061D1BA /* UIColor.swift */; };
 		3265DFBF260350630061D1BA /* AssetsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFBE260350630061D1BA /* AssetsColor.swift */; };
 		3265DFC2260350E50061D1BA /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFC1260350E50061D1BA /* ViewModelProtocol.swift */; };
-		3265DFC5260351110061D1BA /* CustomSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFC4260351110061D1BA /* CustomSpinnerView.swift */; };
 		3265DFC8260351790061D1BA /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFC7260351790061D1BA /* UINavigationBar.swift */; };
 		3265DFCB260351DA0061D1BA /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFCA260351DA0061D1BA /* UIImage.swift */; };
 		3265DFCE260352220061D1BA /* AssetsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFCD260352220061D1BA /* AssetsImage.swift */; };
@@ -36,7 +35,6 @@
 		3265DFE6260357D60061D1BA /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFE4260357D60061D1BA /* SearchTableViewCell.swift */; };
 		3265DFE7260357D60061D1BA /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3265DFE5260357D60061D1BA /* SearchTableViewCell.xib */; };
 		3265DFEC260377780061D1BA /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFEB260377780061D1BA /* JSONDownloader.swift */; };
-		3265DFF0260377980061D1BA /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFEF260377980061D1BA /* JSONData.swift */; };
 		3265DFF3260377D60061D1BA /* HTTPRequestMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFF2260377D60061D1BA /* HTTPRequestMethods.swift */; };
 		3265DFF6260377FB0061D1BA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFF5260377FB0061D1BA /* API.swift */; };
 		3265DFF9260378CC0061D1BA /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3265DFF8260378CC0061D1BA /* Headers.swift */; };
@@ -49,6 +47,7 @@
 		32A5BC7F26039A94005DB988 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A5BC7E26039A94005DB988 /* DetailView.swift */; };
 		32A5BC8326039A9F005DB988 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32A5BC8226039A9F005DB988 /* DetailView.xib */; };
 		32A5BC8726039D26005DB988 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 32A5BC8626039D26005DB988 /* SDWebImage */; };
+		32BBCFAE2606918500561344 /* CustomSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BBCFAD2606918500561344 /* CustomSpinnerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +70,6 @@
 		3265DFBA260350210061D1BA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		3265DFBE260350630061D1BA /* AssetsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsColor.swift; sourceTree = "<group>"; };
 		3265DFC1260350E50061D1BA /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
-		3265DFC4260351110061D1BA /* CustomSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpinnerView.swift; sourceTree = "<group>"; };
 		3265DFC7260351790061D1BA /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 		3265DFCA260351DA0061D1BA /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		3265DFCD260352220061D1BA /* AssetsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsImage.swift; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 		3265DFE4260357D60061D1BA /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		3265DFE5260357D60061D1BA /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		3265DFEB260377780061D1BA /* JSONDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
-		3265DFEF260377980061D1BA /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
 		3265DFF2260377D60061D1BA /* HTTPRequestMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestMethods.swift; sourceTree = "<group>"; };
 		3265DFF5260377FB0061D1BA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		3265DFF8260378CC0061D1BA /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
@@ -95,6 +92,7 @@
 		32A5BC7926039A83005DB988 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		32A5BC7E26039A94005DB988 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		32A5BC8226039A9F005DB988 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		32BBCFAD2606918500561344 /* CustomSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpinnerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +126,9 @@
 		3265DF6C26034B130061D1BA /* Book Searcher */ = {
 			isa = PBXGroup;
 			children = (
-				3265E00526037AE60061D1BA /* Models */,
 				3265DF9626034D710061D1BA /* Additional Materials */,
-				3265DF9226034D5F0061D1BA /* SearchCoordinator.swift */,
+				3265E00526037AE60061D1BA /* Models */,
+				32BBCFB3260695B000561344 /* Coordinator */,
 				3265DF9026034D3B0061D1BA /* Search */,
 				32A5BC7826039A65005DB988 /* Detail */,
 				32A5BC892603A698005DB988 /* Resources */,
@@ -193,8 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				3265DFB626034FDB0061D1BA /* CustomView.swift */,
-				3265DFC4260351110061D1BA /* CustomSpinnerView.swift */,
 				3265E00226037AD80061D1BA /* CustomDecoder.swift */,
+				32BBCFAD2606918500561344 /* CustomSpinnerView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -243,7 +241,6 @@
 			isa = PBXGroup;
 			children = (
 				3265DFEB260377780061D1BA /* JSONDownloader.swift */,
-				3265DFEF260377980061D1BA /* JSONData.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -292,6 +289,14 @@
 				3265DF7B26034B140061D1BA /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		32BBCFB3260695B000561344 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3265DF9226034D5F0061D1BA /* SearchCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,10 +388,10 @@
 				3265DFFC2603792B0061D1BA /* URLRequest.swift in Sources */,
 				3265DFF6260377FB0061D1BA /* API.swift in Sources */,
 				3265DFDE260354200061D1BA /* UIViewController.swift in Sources */,
+				32BBCFAE2606918500561344 /* CustomSpinnerView.swift in Sources */,
 				3265DFD2260353340061D1BA /* Coordinator.swift in Sources */,
 				3265DFC2260350E50061D1BA /* ViewModelProtocol.swift in Sources */,
 				3265DFCB260351DA0061D1BA /* UIImage.swift in Sources */,
-				3265DFC5260351110061D1BA /* CustomSpinnerView.swift in Sources */,
 				3265E00726037AF40061D1BA /* Book.swift in Sources */,
 				3265DFD8260353AD0061D1BA /* UIView.swift in Sources */,
 				3265DF9D26034E940061D1BA /* AlertViewController.swift in Sources */,
@@ -395,7 +400,6 @@
 				3265DF8E26034D1F0061D1BA /* SearchViewController.swift in Sources */,
 				3265E00026037A670061D1BA /* EndPoints.swift in Sources */,
 				3265DF9926034E6B0061D1BA /* ViewSpecificController.swift in Sources */,
-				3265DFF0260377980061D1BA /* JSONData.swift in Sources */,
 				3265DFB726034FDB0061D1BA /* CustomView.swift in Sources */,
 				3265DFDB260353DA0061D1BA /* UISearchBar.swift in Sources */,
 				3265DFF3260377D60061D1BA /* HTTPRequestMethods.swift in Sources */,
